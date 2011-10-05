@@ -123,13 +123,12 @@ namespace ProgrammWallBlocker
                         }
                     }
                 }
+                MessageBox.Show("Done! " + intCounter.ToString() + " Rules were added.");
             }
             else
             {
                 MessageBox.Show("You have to choose at least one rule option!");
             }
-
-            MessageBox.Show("Done! " + intCounter.ToString() + " Rules were added.");
         }
 
         private List<string> getExecuteFiles(string strInputPath)
@@ -206,7 +205,7 @@ namespace ProgrammWallBlocker
                     }
                 }
             }
-            
+
             MessageBox.Show("Done!");
         }
 

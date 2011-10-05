@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tbPath = new System.Windows.Forms.TextBox();
             this.ofdFileDir = new System.Windows.Forms.OpenFileDialog();
@@ -38,6 +39,7 @@
             this.btnAddRoules = new System.Windows.Forms.Button();
             this.btnDeleteRoule = new System.Windows.Forms.Button();
             this.grpRulesOptions = new System.Windows.Forms.GroupBox();
+            this.tpAll = new System.Windows.Forms.ToolTip(this.components);
             this.grpRulesOptions.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +110,7 @@
             this.btnAddRoules.Size = new System.Drawing.Size(99, 23);
             this.btnAddRoules.TabIndex = 6;
             this.btnAddRoules.Text = "Add Rules";
+            this.tpAll.SetToolTip(this.btnAddRoules, "You can now add the rules to the Windows Firewall.");
             this.btnAddRoules.UseVisualStyleBackColor = true;
             this.btnAddRoules.Click += new System.EventHandler(this.btnAddRoules_Click);
             // 
@@ -118,7 +121,9 @@
             this.btnDeleteRoule.Name = "btnDeleteRoule";
             this.btnDeleteRoule.Size = new System.Drawing.Size(86, 23);
             this.btnDeleteRoule.TabIndex = 7;
+            this.btnDeleteRoule.Tag = "";
             this.btnDeleteRoule.Text = "Delete Rules";
+            this.tpAll.SetToolTip(this.btnDeleteRoule, "With this you can delete rules, which you have created with this app.");
             this.btnDeleteRoule.UseVisualStyleBackColor = true;
             this.btnDeleteRoule.Click += new System.EventHandler(this.btnDeleteRoule_Click);
             // 
@@ -132,7 +137,7 @@
             this.grpRulesOptions.Size = new System.Drawing.Size(232, 44);
             this.grpRulesOptions.TabIndex = 8;
             this.grpRulesOptions.TabStop = false;
-            this.grpRulesOptions.Text = "Rules Options";
+            this.grpRulesOptions.Text = "Rules options";
             // 
             // frmMain
             // 
@@ -167,6 +172,7 @@
         private System.Windows.Forms.Button btnAddRoules;
         private System.Windows.Forms.Button btnDeleteRoule;
         private System.Windows.Forms.GroupBox grpRulesOptions;
+        private System.Windows.Forms.ToolTip tpAll;
     }
 }
 
