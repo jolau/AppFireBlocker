@@ -101,8 +101,12 @@ namespace ProgrammWallBlocker
             {
                 if (tbPath.Text != "")
                 {
-                    if (tbPath.Text.Contains(';'))
+                    if (tbPath.Text.Contains(';') || tbPath.Text.EndsWith(".exe") || tbPath.Text.EndsWith(".jar"))
                     {
+                        if (tbPath.Text.EndsWith(".exe") || tbPath.Text.EndsWith(".jar"))
+                        {
+                            tbPath.Text += ";";
+                        }
                         tbPath.Text.Replace(" ;", ";");
                         string[] strPaths = tbPath.Text.Split(';');
 
@@ -184,8 +188,12 @@ namespace ProgrammWallBlocker
             {
                 if (tbPath.Text != "")
                 {
-                    if (tbPath.Text.Contains(';'))
+                    if (tbPath.Text.Contains(';') || tbPath.Text.EndsWith(".exe") || tbPath.Text.EndsWith(".jar"))
                     {
+                        if (tbPath.Text.EndsWith(".exe") || tbPath.Text.EndsWith(".jar"))
+                        {
+                            tbPath.Text += ";";
+                        }
                         tbPath.Text.Replace(" ;", ";");
                         string[] strPaths = tbPath.Text.Split(';');
 
