@@ -3,6 +3,7 @@ TestResults
 *.sdf
 *.ipch
 *.opensdf
+*.user
 bin
 obj
 **/bin

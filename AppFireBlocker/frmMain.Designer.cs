@@ -107,7 +107,7 @@
             this.btnAddRoules.Name = "btnAddRoules";
             this.btnAddRoules.Size = new System.Drawing.Size(99, 23);
             this.btnAddRoules.TabIndex = 6;
-            this.btnAddRoules.Text = "Add Roules";
+            this.btnAddRoules.Text = "Add Rules";
             this.btnAddRoules.UseVisualStyleBackColor = true;
             this.btnAddRoules.Click += new System.EventHandler(this.btnAddRoules_Click);
             // 
@@ -118,7 +118,7 @@
             this.btnDeleteRoule.Name = "btnDeleteRoule";
             this.btnDeleteRoule.Size = new System.Drawing.Size(86, 23);
             this.btnDeleteRoule.TabIndex = 7;
-            this.btnDeleteRoule.Text = "Delete Roules";
+            this.btnDeleteRoule.Text = "Delete Rules";
             this.btnDeleteRoule.UseVisualStyleBackColor = true;
             this.btnDeleteRoule.Click += new System.EventHandler(this.btnDeleteRoule_Click);
             // 
@@ -146,6 +146,7 @@
             this.Controls.Add(this.btnBrowseDir);
             this.Controls.Add(this.tbPath);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(563, 158);
             this.Name = "frmMain";
             this.Text = "Block apps with firewall";
             this.grpRulesOptions.ResumeLayout(false);
